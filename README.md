@@ -25,7 +25,19 @@ To update later, run `git pull` and then `npm install` again in case dependencie
 
 When adding a package, use `npx expo install <package>` instead of `npm install <package>` so the version matches our Expo SDK.
 
-### 2. Install Expo Go
+### 2. Set up your .env
+
+Copy `example.env` to a new file named `.env` in `active-pitch/`:
+
+```bash
+cp example.env .env
+```
+
+Then fill in the values in `.env`. Use the **dev** project's ref in the URL, and the anon/publishable key from the Supabase dashboard under Project Settings → API Keys. Never use the service role/secret key here.
+
+`.env` is gitignored, so do not commit it. Restart the dev server after changing it.
+
+### 3. Install Expo Go
 
 Install Expo Go from the App Store, and sign in with your Expo account on the phone using the app and in the terminal using:
 
@@ -33,7 +45,7 @@ Install Expo Go from the App Store, and sign in with your Expo account on the ph
 npx expo login
 ```
 
-### 3. Run the app on Expo Go
+### 4. Run the app on Expo Go
 
 ```bash
 npx expo start
@@ -62,7 +74,7 @@ npm i -g @expo/ngrok
 npx expo start --tunnel
 ```
 
-### 4. Before you push
+### 5. Before you push
 
 ```bash
 npx expo lint
