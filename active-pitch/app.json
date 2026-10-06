@@ -37,6 +37,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a60f7e2b-4903-4324-86e1-ae3f3107432b"
+      }
+    },
+    "owner": "brodyblask9801s-team"
   }
 }
